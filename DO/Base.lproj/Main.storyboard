@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="DO" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,80 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_img" translatesAutoresizingMaskIntoConstraints="NO" id="Z1L-qo-epV">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCR-NW-JtJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="a8i-W1-yN4">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7vF-G7-eSg" userLabel="NavBar">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQy-QQ-uhV" customClass="MenuView" customModule="DO" customModuleProvider="target">
+                                                    <rect key="frame" x="13" y="29" width="25" height="25"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="maW-1A-VDp"/>
+                                                        <constraint firstAttribute="height" constant="25" id="rbF-cu-FrD"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTe-9j-ySA" customClass="WeatherView" customModule="DO" customModuleProvider="target">
+                                                    <rect key="frame" x="522" y="29" width="65" height="25"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="65" id="Nmp-gJ-UB8"/>
+                                                        <constraint firstAttribute="height" constant="25" id="bxS-zI-OJ6"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="temperature">
+                                                            <real key="value" value="75"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="TQy-QQ-uhV" firstAttribute="leading" secondItem="7vF-G7-eSg" secondAttribute="leading" constant="13" id="3wa-cS-fmp"/>
+                                                <constraint firstAttribute="trailing" secondItem="fTe-9j-ySA" secondAttribute="trailing" constant="13" id="AvL-Rr-EDu"/>
+                                                <constraint firstAttribute="bottom" secondItem="fTe-9j-ySA" secondAttribute="bottom" constant="10" id="Ifu-KI-gdj"/>
+                                                <constraint firstAttribute="height" constant="64" id="Jyd-w0-dCC"/>
+                                                <constraint firstAttribute="bottom" secondItem="TQy-QQ-uhV" secondAttribute="bottom" constant="10" id="zOP-l4-KlA"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="7vF-G7-eSg" firstAttribute="leading" secondItem="a8i-W1-yN4" secondAttribute="leading" id="Ojf-em-eeL"/>
+                                        <constraint firstItem="7vF-G7-eSg" firstAttribute="top" secondItem="a8i-W1-yN4" secondAttribute="top" id="f4A-tj-NwN"/>
+                                        <constraint firstAttribute="trailing" secondItem="7vF-G7-eSg" secondAttribute="trailing" id="k8b-2P-l7v"/>
+                                    </constraints>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Z1L-qo-epV" secondAttribute="trailing" id="0G4-Kz-GOe"/>
+                            <constraint firstItem="cCR-NW-JtJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6p2-Rg-VHE"/>
+                            <constraint firstItem="cCR-NW-JtJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WtE-p4-dDv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z1L-qo-epV" secondAttribute="bottom" id="c4C-Yu-aUO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cCR-NW-JtJ" secondAttribute="bottom" id="ecr-hg-nF6"/>
+                            <constraint firstAttribute="trailing" secondItem="cCR-NW-JtJ" secondAttribute="trailing" id="lCY-mm-3Bx"/>
+                            <constraint firstItem="Z1L-qo-epV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="leT-Rz-ghP"/>
+                            <constraint firstItem="Z1L-qo-epV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oYb-wi-CMW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="325" y="387"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg_img" width="750" height="1334"/>
+    </resources>
 </document>
