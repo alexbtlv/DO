@@ -54,17 +54,7 @@ public class DOStyleKit : NSObject {
         //// weatherIcon
         //// group 7
 
-
         //// bounds Drawing
-
-
-
-
-
-
-
-
-
 
         //// Page-
         //// Group 4-Home 2
@@ -105,11 +95,6 @@ public class DOStyleKit : NSObject {
         DOStyleKit.strokeColor.setStroke()
         shape2Path.lineWidth = 2
         shape2Path.stroke()
-
-
-
-
-        //// bounds 2 Drawing
     }
 
     public class func drawMenu() {
@@ -133,7 +118,6 @@ public class DOStyleKit : NSObject {
         linePath.lineWidth = 1
         linePath.stroke()
 
-
         //// line 2 Drawing
         let line2Path = UIBezierPath()
         line2Path.moveToPoint(CGPointMake(2.5, 12.5))
@@ -148,7 +132,6 @@ public class DOStyleKit : NSObject {
         line2Path.lineWidth = 1
         line2Path.stroke()
 
-
         //// line 3 Drawing
         let line3Path = UIBezierPath()
         line3Path.moveToPoint(CGPointMake(2.5, 21))
@@ -162,9 +145,6 @@ public class DOStyleKit : NSObject {
         DOStyleKit.strokeColor.setStroke()
         line3Path.lineWidth = 1
         line3Path.stroke()
-
-
-
 
         //// bounds Drawing
     }

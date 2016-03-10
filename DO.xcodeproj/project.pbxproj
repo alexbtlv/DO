@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8553AEBC1C91D49C001BB7D5 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8553AEBB1C91D49C001BB7D5 /* RoundedView.swift */; };
 		8562ABD51C2B216C00175588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8562ABD41C2B216C00175588 /* AppDelegate.swift */; };
 		8562ABD71C2B216C00175588 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8562ABD61C2B216C00175588 /* HomeViewController.swift */; };
 		8562ABDA1C2B216C00175588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8562ABD81C2B216C00175588 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8553AEBB1C91D49C001BB7D5 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		8562ABD11C2B216C00175588 /* DO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8562ABD41C2B216C00175588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8562ABD61C2B216C00175588 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				8562AC0F1C2B384A00175588 /* DOStyleKit.swift */,
 				8562AC0D1C2B362F00175588 /* MenuView.swift */,
 				8562AC111C2B421400175588 /* WeatherView.swift */,
+				8553AEBB1C91D49C001BB7D5 /* RoundedView.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			files = (
 				8562AC0E1C2B362F00175588 /* MenuView.swift in Sources */,
 				8562ABD71C2B216C00175588 /* HomeViewController.swift in Sources */,
+				8553AEBC1C91D49C001BB7D5 /* RoundedView.swift in Sources */,
 				8562AC101C2B384A00175588 /* DOStyleKit.swift in Sources */,
 				8562AC121C2B421400175588 /* WeatherView.swift in Sources */,
 				8562ABD51C2B216C00175588 /* AppDelegate.swift in Sources */,
@@ -546,6 +550,7 @@
 				8562ABFE1C2B216C00175588 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8562ABFF1C2B216C00175588 /* Build configuration list for PBXNativeTarget "DOTests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +559,7 @@
 				8562AC011C2B216C00175588 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8562AC021C2B216C00175588 /* Build configuration list for PBXNativeTarget "DOUITests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +568,7 @@
 				8562AC041C2B216C00175588 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
