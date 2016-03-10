@@ -62,28 +62,28 @@
                                                 <constraint firstAttribute="bottom" secondItem="TQy-QQ-uhV" secondAttribute="bottom" constant="10" id="zOP-l4-KlA"/>
                                             </constraints>
                                         </view>
-                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="76" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zzu-Lj-l58">
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="76" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zzu-Lj-l58">
                                             <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <view key="tableHeaderView" contentMode="scaleToFill" id="WDa-fd-jd9">
-                                                <rect key="frame" x="0.0" y="0.0" width="600" height="233"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="240"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7D-tK-xYS">
-                                                        <rect key="frame" x="227" y="20" width="147" height="39"/>
-                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="28"/>
+                                                        <rect key="frame" x="209" y="20" width="183" height="48"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="35"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MARCH 18, 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKw-xH-4g5">
-                                                        <rect key="frame" x="242" y="59" width="117" height="21"/>
-                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                        <rect key="frame" x="258" y="68" width="86" height="16"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="11"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S37-8O-SFi" customClass="RoundedView" customModule="DO" customModuleProvider="target">
-                                                        <rect key="frame" x="240" y="100" width="120" height="120"/>
+                                                        <rect key="frame" x="240" y="104" width="120" height="120"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSg-Bz-aju">
                                                                 <rect key="frame" x="47" y="26" width="26" height="69"/>
@@ -143,10 +143,10 @@
                                             </view>
                                             <prototypes>
                                                 <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TodoCell" rowHeight="76" id="5uo-Bq-9zW">
-                                                    <rect key="frame" x="0.0" y="261" width="600" height="76"/>
+                                                    <rect key="frame" x="0.0" y="268" width="600" height="76"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5uo-Bq-9zW" id="qF3-Db-KbN">
-                                                        <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="600" height="76"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="birthday" translatesAutoresizingMaskIntoConstraints="NO" id="oct-Xx-197">
@@ -156,14 +156,14 @@
                                                                     <constraint firstAttribute="width" constant="25" id="xRs-rZ-9Zo"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Launch with Diane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0M-ku-asW">
-                                                                <rect key="frame" x="66" y="16" width="489" height="22"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch with Diane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0M-ku-asW">
+                                                                <rect key="frame" x="66" y="16" width="131" height="22"/>
                                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crO-sJ-uym">
-                                                                <rect key="frame" x="66" y="39" width="489" height="18"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crO-sJ-uym">
+                                                                <rect key="frame" x="66" y="39" width="62" height="18"/>
                                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
@@ -175,7 +175,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="separator" translatesAutoresizingMaskIntoConstraints="NO" id="jSP-7f-8zp">
-                                                                <rect key="frame" x="0.0" y="74" width="600" height="1"/>
+                                                                <rect key="frame" x="0.0" y="75" width="600" height="1"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="1" id="NLk-sJ-Oia"/>
                                                                 </constraints>
@@ -207,16 +207,29 @@
                                                 </tableViewCell>
                                             </prototypes>
                                         </tableView>
+                                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctd-j7-Cst">
+                                            <rect key="frame" x="273" y="537" width="55" height="55"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="55" id="Bdl-6U-whn"/>
+                                                <constraint firstAttribute="width" constant="55" id="Tdv-jh-n8z"/>
+                                            </constraints>
+                                            <state key="normal" image="add"/>
+                                            <connections>
+                                                <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ajn-eC-b7B"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="Zzu-Lj-l58" secondAttribute="trailing" id="1hm-2z-0EM"/>
                                         <constraint firstItem="Zzu-Lj-l58" firstAttribute="leading" secondItem="a8i-W1-yN4" secondAttribute="leading" id="63z-kd-uuy"/>
+                                        <constraint firstItem="ctd-j7-Cst" firstAttribute="centerX" secondItem="a8i-W1-yN4" secondAttribute="centerX" id="AxO-Ne-cmB"/>
                                         <constraint firstItem="Zzu-Lj-l58" firstAttribute="top" secondItem="7vF-G7-eSg" secondAttribute="bottom" id="G5U-jP-QwF"/>
                                         <constraint firstAttribute="bottom" secondItem="Zzu-Lj-l58" secondAttribute="bottom" id="Oim-b9-iOL"/>
                                         <constraint firstItem="7vF-G7-eSg" firstAttribute="leading" secondItem="a8i-W1-yN4" secondAttribute="leading" id="Ojf-em-eeL"/>
                                         <constraint firstItem="7vF-G7-eSg" firstAttribute="top" secondItem="a8i-W1-yN4" secondAttribute="top" id="f4A-tj-NwN"/>
                                         <constraint firstAttribute="trailing" secondItem="7vF-G7-eSg" secondAttribute="trailing" id="k8b-2P-l7v"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ctd-j7-Cst" secondAttribute="bottom" id="qCQ-qS-cE9"/>
                                     </constraints>
                                 </view>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -245,6 +258,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="add" width="63" height="63"/>
         <image name="bg_img" width="750" height="1334"/>
         <image name="birthday" width="21" height="21"/>
         <image name="separator" width="750" height="2"/>

@@ -22,6 +22,12 @@ class HomeViewController: UIViewController {
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
     }
+    
+    // MARK: – Action Methods
+    
+    @IBAction func addButtonTapped(sender: AnyObject) {
+        print("Add ToDo button tapped")
+    }
 }
 
 extension HomeViewController: UITableViewDataSource {
