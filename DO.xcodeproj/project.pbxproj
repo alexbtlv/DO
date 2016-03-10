@@ -112,7 +112,6 @@
 				8562AC071C2B24F400175588 /* Storyboards */,
 				8562AC061C2B24B200175588 /* Controllers */,
 				8562AC051C2B249F00175588 /* SupportingFiles */,
-				8562ABDE1C2B216C00175588 /* Assets.xcassets */,
 			);
 			path = DO;
 			sourceTree = "<group>";
@@ -157,6 +156,7 @@
 			children = (
 				8562ABD81C2B216C00175588 /* Main.storyboard */,
 				8562ABE01C2B216C00175588 /* LaunchScreen.storyboard */,
+				8562ABDE1C2B216C00175588 /* Assets.xcassets */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
