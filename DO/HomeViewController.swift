@@ -7,20 +7,30 @@
 //
 
 import UIKit
+import SWRevealViewController
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var menuButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
         tableView.delegate = self
         tableView.dataSource = self
-    }
-    
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
+        
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+        self.revealViewController().rearViewRevealWidth = view.frame.width - 72.5
+        self.revealViewController().toggleAnimationType = SWRevealToggleAnimationType.Spring
+        
+        navigationController!.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        navigationController!.navigationBar.shadowImage = UIImage()
+        navigationController!.navigationBar.translucent = true
     }
     
     // MARK: – Action Methods
