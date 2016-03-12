@@ -25,7 +25,7 @@ class HomeViewController: UIViewController {
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        self.revealViewController().rearViewRevealWidth = view.frame.width - 72.5
+        self.revealViewController().rearViewRevealWidth = view.frame.width - Constants.swRevealFrontViewControllerWidth
         self.revealViewController().toggleAnimationType = SWRevealToggleAnimationType.Spring
         
         navigationController!.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
