@@ -1,10 +1,13 @@
 PODS:
+  - CVCalendar (1.2.9)
   - SWRevealViewController (2.3.0)
 
 DEPENDENCIES:
+  - CVCalendar (~> 1.2.9)
   - SWRevealViewController
 
 SPEC CHECKSUMS:
+  CVCalendar: 0799256e0bc3b43e83b7e86c0729ce9ff0624cb6
   SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
 
 COCOAPODS: 0.39.0
