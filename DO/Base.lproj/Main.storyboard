@@ -676,6 +676,18 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="OcV-FA-X9W">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="March 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qlb-yO-ffU">
+                                            <rect key="frame" x="255" y="30" width="90" height="24"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Qlb-yO-ffU" firstAttribute="centerX" secondItem="OcV-FA-X9W" secondAttribute="centerX" id="AIb-nA-xyJ"/>
+                                        <constraint firstItem="Qlb-yO-ffU" firstAttribute="top" secondItem="OcV-FA-X9W" secondAttribute="top" constant="30" id="Emj-g8-gQ1"/>
+                                    </constraints>
                                 </view>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
@@ -717,6 +729,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="VCQ-9Z-zeJ" id="uHk-vQ-H0p"/>
+                        <outlet property="monthLabel" destination="Qlb-yO-ffU" id="O8x-P9-SYq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O2Q-De-C4p" userLabel="First Responder" sceneMemberID="firstResponder"/>
