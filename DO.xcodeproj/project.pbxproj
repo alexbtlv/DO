@@ -20,6 +20,7 @@
 		857459181C94034F004A3F4A /* NavigationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857459171C94034F004A3F4A /* NavigationTableViewController.swift */; };
 		8574591A1C942ACA004A3F4A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857459191C942AC9004A3F4A /* Constants.swift */; };
 		8574591C1C944B6F004A3F4A /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8574591B1C944B6F004A3F4A /* CalendarViewController.swift */; };
+		85BD6A2C1C9722DB00AF9386 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD6A2B1C9722DB00AF9386 /* OverviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		857459171C94034F004A3F4A /* NavigationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationTableViewController.swift; sourceTree = "<group>"; };
 		857459191C942AC9004A3F4A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8574591B1C944B6F004A3F4A /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		85BD6A2B1C9722DB00AF9386 /* OverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		863AF8EDCA3AB62B9032AB9A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +176,7 @@
 				8562ABD61C2B216C00175588 /* HomeViewController.swift */,
 				857459171C94034F004A3F4A /* NavigationTableViewController.swift */,
 				8574591B1C944B6F004A3F4A /* CalendarViewController.swift */,
+				85BD6A2B1C9722DB00AF9386 /* OverviewViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				8553AEBC1C91D49C001BB7D5 /* RoundedView.swift in Sources */,
 				8562ABD51C2B216C00175588 /* AppDelegate.swift in Sources */,
 				8562ABDD1C2B216C00175588 /* DO.xcdatamodeld in Sources */,
+				85BD6A2C1C9722DB00AF9386 /* OverviewViewController.swift in Sources */,
 				8574591C1C944B6F004A3F4A /* CalendarViewController.swift in Sources */,
 				8574591A1C942ACA004A3F4A /* Constants.swift in Sources */,
 			);
