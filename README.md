@@ -1,7 +1,7 @@
 # DO
 Open-Source ToDo App inspired by [DO UI Kit by Invision][].
 
-![](Screenshots/do-mockups.jpg)
+![](Screenshots/DO-Mockups.png)
 
 # Requirements
 
