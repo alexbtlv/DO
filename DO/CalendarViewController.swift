@@ -12,6 +12,7 @@ import CVCalendar
 class CalendarViewController: UIViewController {
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet weak var tableView: UITableView!
 
     var menuView: CVCalendarMenuView!
     var calView: CVCalendarView!
@@ -33,7 +34,11 @@ class CalendarViewController: UIViewController {
         navigationController!.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
         navigationController!.navigationBar.shadowImage = UIImage()
         navigationController!.navigationBar.translucent = true
-    
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.rowHeight = 76
+        
         // CVCalendarMenuView initialization with frame
         menuView = CVCalendarMenuView(frame: CGRect(x: 15, y: 79, width: 345, height: 25))
         menuView.dayOfWeekTextColor = UIColor(white: 1, alpha: 0.5)
@@ -75,7 +80,16 @@ class CalendarViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    // MARK: – Actions
+    
+    @IBAction func prevNavBarButtonTapped(sender: AnyObject) {
+        calView.loadPreviousView()
+    }
+    
+    @IBAction func nextNavBarButtonTapped(sender: AnyObject) {
+        calView.loadNextView()
+    }
 }
 
 // MARK: - CVCalendarViewDelegate & CVCalendarMenuViewDelegate
@@ -152,6 +166,24 @@ extension CalendarViewController : CVCalendarViewAppearanceDelegate {
     }
 }
 
+extension CalendarViewController: UITableViewDataSource {
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 6
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("TodoCell")! as UITableViewCell
+        return cell
+    }
+}
+
+extension CalendarViewController: UITableViewDelegate {
+}
 
 
 
