@@ -8,6 +8,7 @@
 
 import UIKit
 import CVCalendar
+import SWRevealViewController
 
 class CalendarViewController: UIViewController {
 
@@ -26,7 +27,7 @@ class CalendarViewController: UIViewController {
         
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
-            menuButton.action = "revealToggle:"
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         self.revealViewController().rearViewRevealWidth = view.frame.width - Constants.swRevealFrontViewControllerWidth
