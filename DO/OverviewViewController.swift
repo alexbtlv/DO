@@ -8,10 +8,13 @@
 
 import UIKit
 import SWRevealViewController
+import CVCalendar
 
 class OverviewViewController: UIViewController {
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet weak var menuView: UIView!
+    @IBOutlet weak var calendarView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +29,24 @@ class OverviewViewController: UIViewController {
         navigationController!.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
         navigationController!.navigationBar.shadowImage = UIImage()
         navigationController!.navigationBar.translucent = true
+        navigationController!.navigationBar.titleTextAttributes = [
+            NSFontAttributeName : UIFont(name: "Avenir-Book", size: 17)!,
+            NSForegroundColorAttributeName : UIColor.whiteColor()
+        ]
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: - Action handlers
+    
+    @IBAction func previousMonthButtonTapped(sender: AnyObject) {
+    }
+    
+    @IBAction func nextMonthButtonTapped(sender: AnyObject) {
     }
     
     /*

@@ -820,7 +820,7 @@
             </objects>
             <point key="canvasLocation" x="1362" y="622"/>
         </scene>
-        <!--Overview View Controller-->
+        <!--Overview-->
         <scene sceneID="LZE-tp-Xi4">
             <objects>
                 <viewController id="p8o-CJ-yTo" customClass="OverviewViewController" customModule="DO" customModuleProvider="target" sceneMemberID="viewController">
@@ -840,6 +840,171 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Pz8-fc-8Nj">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yup-kA-Wus">
+                                            <rect key="frame" x="0.0" y="64" width="600" height="125"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S68-ER-W1r">
+                                                    <rect key="frame" x="15" y="50" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="mGS-9c-CuF"/>
+                                                        <constraint firstAttribute="height" constant="25" id="o7R-0n-WY4"/>
+                                                    </constraints>
+                                                    <state key="normal" image="left-light"/>
+                                                    <connections>
+                                                        <action selector="previousMonthButtonTapped:" destination="p8o-CJ-yTo" eventType="touchUpInside" id="uNA-gI-7yK"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFb-7v-qUh">
+                                                    <rect key="frame" x="560" y="50" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="0ve-Pv-1dv"/>
+                                                        <constraint firstAttribute="width" constant="25" id="HGK-ve-aMH"/>
+                                                    </constraints>
+                                                    <state key="normal" image="right-light"/>
+                                                    <connections>
+                                                        <action selector="nextMonthButtonTapped:" destination="p8o-CJ-yTo" eventType="touchUpInside" id="go3-HB-Q8V"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="March" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQT-hW-GNb">
+                                                    <rect key="frame" x="252" y="30" width="97" height="48"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="35"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYd-kd-B0r">
+                                                    <rect key="frame" x="288" y="81" width="25" height="16"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="11"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="0.048991389318885449" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="S68-ER-W1r" firstAttribute="centerY" secondItem="yup-kA-Wus" secondAttribute="centerY" id="19S-g3-nfX"/>
+                                                <constraint firstAttribute="height" constant="125" id="3Wl-I3-mdu"/>
+                                                <constraint firstItem="IQT-hW-GNb" firstAttribute="centerX" secondItem="yup-kA-Wus" secondAttribute="centerX" id="8Cd-fj-dgR"/>
+                                                <constraint firstItem="IQT-hW-GNb" firstAttribute="top" secondItem="yup-kA-Wus" secondAttribute="top" constant="30" id="OGq-m5-LeN"/>
+                                                <constraint firstItem="aFb-7v-qUh" firstAttribute="centerY" secondItem="yup-kA-Wus" secondAttribute="centerY" id="P5O-Be-j9i"/>
+                                                <constraint firstItem="S68-ER-W1r" firstAttribute="leading" secondItem="yup-kA-Wus" secondAttribute="leading" constant="15" id="Rg9-vC-C9o"/>
+                                                <constraint firstAttribute="trailing" secondItem="aFb-7v-qUh" secondAttribute="trailing" constant="15" id="bnn-RL-fN0"/>
+                                                <constraint firstItem="gYd-kd-B0r" firstAttribute="top" secondItem="IQT-hW-GNb" secondAttribute="bottom" constant="3" id="ign-GP-msK"/>
+                                                <constraint firstItem="gYd-kd-B0r" firstAttribute="centerX" secondItem="yup-kA-Wus" secondAttribute="centerX" id="ohH-6i-Q3e"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Oi-wI-ZaZ">
+                                            <rect key="frame" x="8" y="197" width="584" height="25"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="1wH-Ez-Hcp"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9v-DI-RdZ">
+                                            <rect key="frame" x="8" y="230" width="584" height="250"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="250" id="bMm-F9-RDa"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0l-oE-7gE" customClass="DOTaskProgressView" customModule="DO" customModuleProvider="target">
+                                            <rect key="frame" x="143" y="449" width="75" height="116"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="116" id="0L3-k7-18w"/>
+                                                <constraint firstAttribute="width" constant="75" id="oNV-FD-RkF"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="totalNumberOfTasks">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="numberOfTasksToDisplay">
+                                                    <real key="value" value="6"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="statusText" value="snoozed"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="0L3-k7-18w"/>
+                                                    <exclude reference="oNV-FD-RkF"/>
+                                                </mask>
+                                            </variation>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IDZ-FU-KMf" customClass="DOTaskProgressView" customModule="DO" customModuleProvider="target">
+                                            <rect key="frame" x="263" y="449" width="75" height="116"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="75" id="FCT-zW-v3e"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="116" id="FRE-cn-ql9"/>
+                                                <constraint firstAttribute="width" constant="75" id="GFo-8y-OMT"/>
+                                                <constraint firstAttribute="height" constant="116" id="n79-St-e0h"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="totalNumberOfTasks">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="numberOfTasksToDisplay">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="statusText" value="completed"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="FRE-cn-ql9"/>
+                                                    <exclude reference="GFo-8y-OMT"/>
+                                                </mask>
+                                            </variation>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qD6-me-FWu" customClass="DOTaskProgressView" customModule="DO" customModuleProvider="target">
+                                            <rect key="frame" x="383" y="449" width="75" height="116"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="75" id="RJa-Ne-UqR"/>
+                                                <constraint firstAttribute="height" constant="116" id="pmz-KI-Q01"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="totalNumberOfTasks">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="numberOfTasksToDisplay">
+                                                    <real key="value" value="7"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="statusText" value="overdue"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="pmz-KI-Q01"/>
+                                                    <exclude reference="RJa-Ne-UqR"/>
+                                                </mask>
+                                            </variation>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="IDZ-FU-KMf" secondAttribute="bottom" constant="35" id="4qa-F0-UxN"/>
+                                        <constraint firstAttribute="bottom" secondItem="k0l-oE-7gE" secondAttribute="bottom" constant="35" id="5B2-96-30S"/>
+                                        <constraint firstAttribute="trailing" secondItem="5Oi-wI-ZaZ" secondAttribute="trailing" constant="8" id="5La-5r-2ZV"/>
+                                        <constraint firstAttribute="trailing" secondItem="F9v-DI-RdZ" secondAttribute="trailing" constant="8" id="6uw-iv-W2y"/>
+                                        <constraint firstItem="qD6-me-FWu" firstAttribute="width" secondItem="IDZ-FU-KMf" secondAttribute="width" id="EVC-aG-JBH"/>
+                                        <constraint firstItem="yup-kA-Wus" firstAttribute="leading" secondItem="Pz8-fc-8Nj" secondAttribute="leading" id="GO2-NN-82u"/>
+                                        <constraint firstItem="IDZ-FU-KMf" firstAttribute="leading" secondItem="k0l-oE-7gE" secondAttribute="trailing" constant="45" id="KfN-9K-uz7"/>
+                                        <constraint firstAttribute="bottom" secondItem="k0l-oE-7gE" secondAttribute="bottom" constant="35" id="Ngg-0S-KCD"/>
+                                        <constraint firstAttribute="bottom" secondItem="qD6-me-FWu" secondAttribute="bottom" constant="35" id="ORN-0O-yIB"/>
+                                        <constraint firstItem="5Oi-wI-ZaZ" firstAttribute="leading" secondItem="Pz8-fc-8Nj" secondAttribute="leading" constant="8" id="PTp-WA-s8f"/>
+                                        <constraint firstItem="5Oi-wI-ZaZ" firstAttribute="top" secondItem="yup-kA-Wus" secondAttribute="bottom" constant="8" id="YHe-cI-05R"/>
+                                        <constraint firstItem="k0l-oE-7gE" firstAttribute="width" secondItem="IDZ-FU-KMf" secondAttribute="width" id="a2M-18-Ebu"/>
+                                        <constraint firstItem="yup-kA-Wus" firstAttribute="top" secondItem="Pz8-fc-8Nj" secondAttribute="top" constant="64" id="bRl-RE-E8m"/>
+                                        <constraint firstItem="qD6-me-FWu" firstAttribute="leading" secondItem="IDZ-FU-KMf" secondAttribute="trailing" constant="45" id="cdW-Js-Lul"/>
+                                        <constraint firstItem="IDZ-FU-KMf" firstAttribute="centerX" secondItem="Pz8-fc-8Nj" secondAttribute="centerX" id="eDz-IC-hg7"/>
+                                        <constraint firstItem="k0l-oE-7gE" firstAttribute="height" secondItem="IDZ-FU-KMf" secondAttribute="height" id="jO5-w3-a8z"/>
+                                        <constraint firstAttribute="trailing" secondItem="yup-kA-Wus" secondAttribute="trailing" id="kLq-B7-Ya7"/>
+                                        <constraint firstItem="F9v-DI-RdZ" firstAttribute="leading" secondItem="Pz8-fc-8Nj" secondAttribute="leading" constant="8" id="q7A-Gb-p3N"/>
+                                        <constraint firstItem="F9v-DI-RdZ" firstAttribute="top" secondItem="5Oi-wI-ZaZ" secondAttribute="bottom" constant="8" id="tFk-co-xgY"/>
+                                        <constraint firstItem="qD6-me-FWu" firstAttribute="height" secondItem="IDZ-FU-KMf" secondAttribute="height" id="vaJ-Bj-aJG"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="Ngg-0S-KCD"/>
+                                        </mask>
+                                    </variation>
                                 </view>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
@@ -864,13 +1029,18 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="QSg-ZM-p5N">
+                    <navigationItem key="navigationItem" title="Overview" id="QSg-ZM-p5N">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="euA-rm-owu">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="search" id="xq2-n2-RQ9">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="calendarView" destination="F9v-DI-RdZ" id="uLf-Vx-Aim"/>
                         <outlet property="menuButton" destination="euA-rm-owu" id="GbX-NM-tMK"/>
+                        <outlet property="menuView" destination="5Oi-wI-ZaZ" id="skt-F8-0fG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nm-4N-2Ok" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -928,6 +1098,7 @@
         <image name="home" width="25" height="22"/>
         <image name="img" width="50" height="50"/>
         <image name="left" width="12" height="21"/>
+        <image name="left-light" width="6" height="11"/>
         <image name="lists" width="21" height="17"/>
         <image name="logout" width="20" height="21"/>
         <image name="menu" width="21" height="17"/>
@@ -935,6 +1106,8 @@
         <image name="overview" width="22" height="22"/>
         <image name="profile" width="22" height="22"/>
         <image name="right" width="12" height="21"/>
+        <image name="right-light" width="6" height="11"/>
+        <image name="search" width="23" height="22"/>
         <image name="separator" width="750" height="2"/>
         <image name="settings" width="21" height="21"/>
         <image name="timeline" width="23" height="23"/>
