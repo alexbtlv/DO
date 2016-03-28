@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		53BF70E428E04F5EC577DFDB /* Pods_DO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA88C8543D7BF61C0B4E59D /* Pods_DO.framework */; };
-		854B13B41CA70AE40046BC50 /* GroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854B13B31CA70AE40046BC50 /* GroupsTableViewController.swift */; };
 		8553AEBC1C91D49C001BB7D5 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8553AEBB1C91D49C001BB7D5 /* RoundedView.swift */; };
 		8562ABD51C2B216C00175588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8562ABD41C2B216C00175588 /* AppDelegate.swift */; };
 		8562ABD71C2B216C00175588 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8562ABD61C2B216C00175588 /* HomeViewController.swift */; };
@@ -24,6 +23,7 @@
 		85B186321CA6B41F001E36B5 /* DOStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B186311CA6B41F001E36B5 /* DOStyleKit.swift */; };
 		85B186341CA6B457001E36B5 /* DOTaskProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B186331CA6B457001E36B5 /* DOTaskProgressView.swift */; };
 		85BD6A2C1C9722DB00AF9386 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD6A2B1C9722DB00AF9386 /* OverviewViewController.swift */; };
+		85C79E9B1CA94553009A2E27 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C79E9A1CA94553009A2E27 /* GroupsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,6 @@
 
 /* Begin PBXFileReference section */
 		3992BC4E20ACEFCD1B5CBBE7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		854B13B31CA70AE40046BC50 /* GroupsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsTableViewController.swift; sourceTree = "<group>"; };
 		8553AEBB1C91D49C001BB7D5 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		8562ABD11C2B216C00175588 /* DO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8562ABD41C2B216C00175588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +66,7 @@
 		85B186311CA6B41F001E36B5 /* DOStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOStyleKit.swift; sourceTree = "<group>"; };
 		85B186331CA6B457001E36B5 /* DOTaskProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOTaskProgressView.swift; sourceTree = "<group>"; };
 		85BD6A2B1C9722DB00AF9386 /* OverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
+		85C79E9A1CA94553009A2E27 /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		8DB496B0BB948A25D9741332 /* Pods-DO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DO.release.xcconfig"; path = "Pods/Target Support Files/Pods-DO/Pods-DO.release.xcconfig"; sourceTree = "<group>"; };
 		DE7453827BE13F5A9E7EB114 /* Pods-DO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DO/Pods-DO.debug.xcconfig"; sourceTree = "<group>"; };
 		FEA88C8543D7BF61C0B4E59D /* Pods_DO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,7 +185,7 @@
 				857459171C94034F004A3F4A /* NavigationTableViewController.swift */,
 				8574591B1C944B6F004A3F4A /* CalendarViewController.swift */,
 				85BD6A2B1C9722DB00AF9386 /* OverviewViewController.swift */,
-				854B13B31CA70AE40046BC50 /* GroupsTableViewController.swift */,
+				85C79E9A1CA94553009A2E27 /* GroupsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -415,7 +415,7 @@
 				8553AEBC1C91D49C001BB7D5 /* RoundedView.swift in Sources */,
 				8562ABD51C2B216C00175588 /* AppDelegate.swift in Sources */,
 				8562ABDD1C2B216C00175588 /* DO.xcdatamodeld in Sources */,
-				854B13B41CA70AE40046BC50 /* GroupsTableViewController.swift in Sources */,
+				85C79E9B1CA94553009A2E27 /* GroupsViewController.swift in Sources */,
 				85BD6A2C1C9722DB00AF9386 /* OverviewViewController.swift in Sources */,
 				8574591C1C944B6F004A3F4A /* CalendarViewController.swift in Sources */,
 				8574591A1C942ACA004A3F4A /* Constants.swift in Sources */,
