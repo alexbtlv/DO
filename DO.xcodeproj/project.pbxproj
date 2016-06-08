@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		53BF70E428E04F5EC577DFDB /* Pods_DO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA88C8543D7BF61C0B4E59D /* Pods_DO.framework */; };
+		85163F4C1CAA98F6001F4395 /* ListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85163F4B1CAA98F6001F4395 /* ListsViewController.swift */; };
 		8553AEBC1C91D49C001BB7D5 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8553AEBB1C91D49C001BB7D5 /* RoundedView.swift */; };
 		8562ABD51C2B216C00175588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8562ABD41C2B216C00175588 /* AppDelegate.swift */; };
 		8562ABD71C2B216C00175588 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8562ABD61C2B216C00175588 /* HomeViewController.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		3992BC4E20ACEFCD1B5CBBE7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85163F4B1CAA98F6001F4395 /* ListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsViewController.swift; sourceTree = "<group>"; };
 		8553AEBB1C91D49C001BB7D5 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		8562ABD11C2B216C00175588 /* DO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8562ABD41C2B216C00175588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				8574591B1C944B6F004A3F4A /* CalendarViewController.swift */,
 				85BD6A2B1C9722DB00AF9386 /* OverviewViewController.swift */,
 				85C79E9A1CA94553009A2E27 /* GroupsViewController.swift */,
+				85163F4B1CAA98F6001F4395 /* ListsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 			files = (
 				85B186321CA6B41F001E36B5 /* DOStyleKit.swift in Sources */,
 				85B186341CA6B457001E36B5 /* DOTaskProgressView.swift in Sources */,
+				85163F4C1CAA98F6001F4395 /* ListsViewController.swift in Sources */,
 				857459181C94034F004A3F4A /* NavigationTableViewController.swift in Sources */,
 				8562ABD71C2B216C00175588 /* HomeViewController.swift in Sources */,
 				8553AEBC1C91D49C001BB7D5 /* RoundedView.swift in Sources */,
