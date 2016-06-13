@@ -182,7 +182,7 @@
                                             </constraints>
                                             <state key="normal" image="add"/>
                                             <connections>
-                                                <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ajn-eC-b7B"/>
+                                                <segue destination="WvL-KU-xWY" kind="show" id="JEE-Sy-oNI"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -233,6 +233,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1362" y="-57"/>
+        </scene>
+        <!--New Event View Controller-->
+        <scene sceneID="His-xF-n34">
+            <objects>
+                <viewController id="WvL-KU-xWY" customClass="NewEventViewController" customModule="DO" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M2w-iA-sJj"/>
+                        <viewControllerLayoutGuide type="bottom" id="tgA-P0-uWs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QMj-pL-8g0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ayg-aI-Sc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2149" y="-57"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="rmc-8L-sFQ">

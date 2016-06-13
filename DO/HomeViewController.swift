@@ -32,12 +32,6 @@ class HomeViewController: UIViewController {
         navigationController!.navigationBar.shadowImage = UIImage()
         navigationController!.navigationBar.translucent = true
     }
-    
-    // MARK: – Action Methods
-    
-    @IBAction func addButtonTapped(sender: AnyObject) {
-        print("Add ToDo button tapped")
-    }
 }
 
 extension HomeViewController: UITableViewDataSource {

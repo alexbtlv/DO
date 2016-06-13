@@ -15,6 +15,10 @@ class ListsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     
+    weak var tableView1: UITableView!
+    weak var tableView2: UITableView!
+    weak var tableView3: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -46,6 +50,7 @@ class ListsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView3.backgroundColor = UIColor.cyanColor()
         
         scrollView.contentSize = CGSize(width: scrollViewWidth*3, height: scrollViewHeight)
+        scrollView.delegate = self
         scrollView.addSubview(tableView1)
         scrollView.addSubview(tableView2)
         scrollView.addSubview(tableView3)
@@ -83,7 +88,7 @@ class ListsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     // MARK: - UITableViewDataSource Methods
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        return 0
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -96,3 +101,15 @@ class ListsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return cell!
     }
 }
+
+extension ListsViewController: UIScrollViewDelegate {
+    
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        print(scrollView.contentOffset)
+    }
+}
+
+
+
+
+
