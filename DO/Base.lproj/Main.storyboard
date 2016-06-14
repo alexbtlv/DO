@@ -245,7 +245,30 @@
                     <view key="view" contentMode="scaleToFill" id="QMj-pL-8g0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bg_img" translatesAutoresizingMaskIntoConstraints="NO" id="QgC-B7-NL7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kah-Nw-VxE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="wMA-Il-B5U">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="QgC-B7-NL7" secondAttribute="trailing" id="9CL-ln-KuE"/>
+                            <constraint firstItem="Kah-Nw-VxE" firstAttribute="top" secondItem="QgC-B7-NL7" secondAttribute="top" id="HWd-ZM-Kdg"/>
+                            <constraint firstItem="Kah-Nw-VxE" firstAttribute="leading" secondItem="QgC-B7-NL7" secondAttribute="leading" id="Is5-K1-hmd"/>
+                            <constraint firstItem="QgC-B7-NL7" firstAttribute="top" secondItem="M2w-iA-sJj" secondAttribute="bottom" constant="-64" id="M7T-5u-Ody"/>
+                            <constraint firstItem="QgC-B7-NL7" firstAttribute="leading" secondItem="QMj-pL-8g0" secondAttribute="leading" id="Smg-qt-UpE"/>
+                            <constraint firstItem="Kah-Nw-VxE" firstAttribute="trailing" secondItem="QgC-B7-NL7" secondAttribute="trailing" id="a3r-Tp-8zU"/>
+                            <constraint firstItem="Kah-Nw-VxE" firstAttribute="bottom" secondItem="QgC-B7-NL7" secondAttribute="bottom" id="awp-B4-Bep"/>
+                            <constraint firstAttribute="bottom" secondItem="QgC-B7-NL7" secondAttribute="bottom" id="hwG-4u-Uzw"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ayg-aI-Sc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
