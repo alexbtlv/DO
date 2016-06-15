@@ -41,12 +41,12 @@ class CalendarViewController: UIViewController {
         tableView.rowHeight = 76
         
         // CVCalendarMenuView initialization with frame
-        menuView = CVCalendarMenuView(frame: CGRect(x: 15, y: 79, width: 345, height: 25))
+        menuView = CVCalendarMenuView()
         menuView.dayOfWeekTextColor = UIColor(white: 1, alpha: 0.5)
         menuView.dayOfWeekFont = UIFont(name: "Avenir-Book", size: 13)!
         menuView.dayOfWeekTextUppercase = false
         // CVCalendarView initialization with frame
-        calView = CVCalendarView(frame: CGRect(x: 15, y: 134, width: 345, height: 300))
+        calView = CVCalendarView()
         // Appearance delegate [Unnecessary]
         self.calView.calendarAppearanceDelegate = self
         
@@ -68,6 +68,23 @@ class CalendarViewController: UIViewController {
         calView.appearance.dayLabelPresentWeekdayHighlightedBackgroundAlpha = 0.1
         
         monthLabel.text = CVDate(date: NSDate()).globalDescription
+    }
+    
+    override func viewWillLayoutSubviews() {
+        calView.translatesAutoresizingMaskIntoConstraints = false
+        menuView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activateConstraints([
+            menuView.topAnchor.constraintEqualToAnchor(topLayoutGuide.bottomAnchor, constant: 8),
+            menuView.leadingAnchor.constraintEqualToAnchor(view.leadingAnchor, constant: 15),
+            menuView.trailingAnchor.constraintEqualToAnchor(view.trailingAnchor, constant: 15),
+            menuView.heightAnchor.constraintEqualToConstant(25),
+            
+            calView.topAnchor.constraintEqualToAnchor(menuView.bottomAnchor, constant: 15),
+            calView.leadingAnchor.constraintEqualToAnchor(view.leadingAnchor, constant: 15),
+            calView.trailingAnchor.constraintEqualToAnchor(view.trailingAnchor, constant: 15),
+            calView.heightAnchor.constraintEqualToConstant(300)
+        ])
     }
     
     override func viewDidLayoutSubviews() {
