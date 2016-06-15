@@ -18,7 +18,7 @@ import UIKit
     // An empty implementation adversely affects performance during animation.
     override func drawRect(rect: CGRect) {
         let upCaseString = statusText.uppercaseString
-        DOStyleKit.drawDOTaskProgressView(numberOfTasksToDisplay: numberOfTasksToDisplay, numberOfTasksTotal: totalNumberOfTasks, statusText: upCaseString)
+        DOStyleKit.drawDOTaskProgressView(numberOfTasksToDisplay, numberOfTasksTotal: totalNumberOfTasks, statusText: upCaseString)
     }
     
 }

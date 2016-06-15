@@ -34,7 +34,7 @@ public class DOStyleKit : NSObject {
     
     //// Drawing Methods
     
-    public class func drawDOTaskProgressView(numberOfTasksToDisplay numberOfTasksToDisplay: CGFloat = 10, numberOfTasksTotal: CGFloat = 20, statusText: String = "SNOOZED") {
+    public class func drawDOTaskProgressView(numberOfTasksToDisplay: CGFloat = 10, numberOfTasksTotal: CGFloat = 20, statusText: String = "SNOOZED") {
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()
         
@@ -52,10 +52,10 @@ public class DOStyleKit : NSObject {
         let labelFontAttributes = [NSFontAttributeName: UIFont(name: "Avenir-Book", size: 11)!, NSForegroundColorAttributeName: DOStyleKit.whiteA05, NSParagraphStyleAttributeName: labelStyle]
         
         let labelTextHeight: CGFloat = NSString(string: statusText).boundingRectWithSize(CGSize(width: labelRect.width, height: CGFloat.infinity), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: labelFontAttributes, context: nil).size.height
-        CGContextSaveGState(context)
-        CGContextClipToRect(context, labelRect)
+        CGContextSaveGState(context!)
+        CGContextClipToRect(context!, labelRect)
         NSString(string: statusText).drawInRect(CGRect(x: labelRect.minX, y: labelRect.minY + (labelRect.height - labelTextHeight) / 2, width: labelRect.width, height: labelTextHeight), withAttributes: labelFontAttributes)
-        CGContextRestoreGState(context)
+        CGContextRestoreGState(context!)
         
         
         //// numberOfTasksText Drawing
@@ -66,10 +66,10 @@ public class DOStyleKit : NSObject {
         let numberOfTasksTextFontAttributes = [NSFontAttributeName: UIFont(name: "Avenir-Light", size: 40)!, NSForegroundColorAttributeName: UIColor.whiteColor(), NSParagraphStyleAttributeName: numberOfTasksTextStyle]
         
         let numberOfTasksTextTextHeight: CGFloat = NSString(string: numericLabelText).boundingRectWithSize(CGSize(width: numberOfTasksTextRect.width, height: CGFloat.infinity), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: numberOfTasksTextFontAttributes, context: nil).size.height
-        CGContextSaveGState(context)
-        CGContextClipToRect(context, numberOfTasksTextRect)
+        CGContextSaveGState(context!)
+        CGContextClipToRect(context!, numberOfTasksTextRect)
         NSString(string: numericLabelText).drawInRect(CGRect(x: numberOfTasksTextRect.minX, y: numberOfTasksTextRect.minY + (numberOfTasksTextRect.height - numberOfTasksTextTextHeight) / 2, width: numberOfTasksTextRect.width, height: numberOfTasksTextTextHeight), withAttributes: numberOfTasksTextFontAttributes)
-        CGContextRestoreGState(context)
+        CGContextRestoreGState(context!)
         
         
         //// ProgressBackground Drawing
@@ -80,9 +80,9 @@ public class DOStyleKit : NSObject {
         
         
         //// Progress Drawing
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 38.05, 98.95)
-        CGContextRotateCTM(context, -90.19 * CGFloat(M_PI) / 180)
+        CGContextSaveGState(context!)
+        CGContextTranslateCTM(context!, 38.05, 98.95)
+        CGContextRotateCTM(context!, -90.19 * CGFloat(M_PI) / 180)
         
         let progressPath = UIBezierPath()
         progressPath.moveToPoint(CGPoint(x: 15, y: -0))
@@ -101,12 +101,12 @@ public class DOStyleKit : NSObject {
             DOStyleKit.snoonzedColor.setStroke()
         }
         progressPath.lineWidth = 2
-        CGContextSaveGState(context)
-        CGContextSetLineDash(context, 9, [dash, 99], 2)
+        CGContextSaveGState(context!)
+        CGContextSetLineDash(context!, 9, [dash, 99], 2)
         progressPath.stroke()
-        CGContextRestoreGState(context)
+        CGContextRestoreGState(context!)
         
-        CGContextRestoreGState(context)
+        CGContextRestoreGState(context!)
         
         
         //// Point Drawing
