@@ -14,6 +14,14 @@ class NewEventViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        navigationController!.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        navigationController!.navigationBar.shadowImage = UIImage()
+        navigationController!.navigationBar.translucent = true
+        navigationController!.navigationBar.titleTextAttributes = [
+            NSFontAttributeName : UIFont(name: "Avenir-Book", size: 17)!,
+            NSForegroundColorAttributeName : UIColor.whiteColor()
+        ]
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,5 +39,15 @@ class NewEventViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    
+    @IBAction func closeButtonTapped(sender: AnyObject) {
+        dismissViewController()
+    }
+    
+    func dismissViewController() {
+        navigationController?.popViewControllerAnimated(true)
+    }
 
 }
